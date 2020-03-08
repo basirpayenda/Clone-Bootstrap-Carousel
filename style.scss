@@ -1,0 +1,60 @@
+img {
+  width: 100%;
+}
+.carousel-container {
+  position: relative;
+  width: 992px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #222222;
+  overflow: hidden;
+  border-radius: 4px;
+  img {
+    min-width: 992px;
+  }
+  //   height: 500px;
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: black;
+    color: #f3f3f3;
+    opacity: 0.8;
+    z-index: 99;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #prevBtn {
+    left: 7%;
+  }
+  #nextBtn {
+    right: 7%;
+  }
+  .carousel-slide {
+    display: flex;
+  }
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  .dot {
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    margin: 0.25rem;
+    background-color: #918b8b;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #ebe5e5;
+  }
+}
