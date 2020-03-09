@@ -1,6 +1,6 @@
 /*********************** carousel ***********************/
 const carousel_slide = document.querySelector(".carousel-inner");
-const carousel_images = document.querySelectorAll(".carousel-inner img");
+const carousel_images = document.querySelectorAll(".slide-item");
 
 const dots = document.querySelector(".dots");
 const dot = document.querySelectorAll(".dot");

@@ -13,13 +13,30 @@
 
 <body>
 
+    <!-- <div class="container" style="padding: 0;"> -->
     <div class="carousel">
         <i class="fas fa-chevron-left" id="prevBtn"></i>
         <i class="fas fa-chevron-right" id="nextBtn"></i>
         <div class="carousel-inner">
-            <img src="https://www.w3schools.com/bootstrap4/ny.jpg" class="firstSlide" alt="">
-            <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="">
-            <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="">
+            <div class="slide-item">
+                <div class="caption">
+                    <h1>First Slide</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" width="100%" alt="">
+            </div>
+            <div class="slide-item">
+                <div class="caption">
+                    <h1>Second Slide</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div> <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="" width="100%">
+            </div>
+            <div class="slide-item">
+                <div class="caption">
+                    <h1>Third Slide</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div> <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" width="100%" alt="">
+            </div>
         </div>
         <div class="dots">
             <span class="dot active"></span>
@@ -27,6 +44,7 @@
             <span class="dot"></span>
         </div>
     </div>
+    <!-- </div> -->
 
     <script src="script.js"></script>
 
