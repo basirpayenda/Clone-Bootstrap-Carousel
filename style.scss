@@ -1,18 +1,16 @@
 img {
   width: 100%;
 }
-.carousel-container {
+.carousel {
   position: relative;
-  width: 992px;
   height: auto;
   margin: 0 auto;
   border: 1px solid #222222;
   overflow: hidden;
   border-radius: 4px;
   img {
-    min-width: 992px;
+    min-width: 100%;
   }
-  //   height: 500px;
   #prevBtn,
   #nextBtn {
     position: absolute;
@@ -34,7 +32,7 @@ img {
   #nextBtn {
     right: 7%;
   }
-  .carousel-slide {
+  .carousel-inner {
     display: flex;
   }
 }
@@ -50,11 +48,57 @@ img {
     display: inline-block;
     height: 5px;
     width: 30px;
+    border-radius: 3px;
     margin: 0.25rem;
     background-color: #918b8b;
     cursor: pointer;
   }
   .active {
     background-color: #ebe5e5;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel {
+    max-width: 546px;
+    img {
+      min-width: 546px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .carousel {
+    max-width: 738px;
+    img {
+      min-width: 738px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    max-width: 994px;
+    img {
+      min-width: 994px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    max-width: 994px;
+    img {
+      min-width: 994px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel {
+    max-width: 1150px;
+    img {
+      min-width: 1150px;
+    }
   }
 }
